@@ -57,12 +57,17 @@ public class StudentList {
                 System.out.println(studentInfo);
             }
             case 2->{
-                System.out.print("Insert ID to search to record: ");
+                System.out.print("Insert ID to search: ");
                 int id = new Scanner(System.in).nextInt();
                 boolean isInserted = searchStudentById(id);
                 System.out.println(studentInfo);
             }
-            case 3->{}
+            case 3->{
+                System.out.print("Insert ID to delete: ");
+                int remove = new Scanner(System.in).nextInt();
+                boolean delete = removeStudentById(remove);
+                System.out.println(studentInfo);
+            }
             case 4->{}
             case 5->{System.exit(0);}
         }
